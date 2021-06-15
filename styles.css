@@ -22,7 +22,8 @@ body {
 }
 
 .col-header {
-  width: 150px;
+  margin-right: 20px;
+  width: 130px;
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 20px;
   padding: 0.8rem 1rem;
@@ -30,14 +31,14 @@ body {
 }
 
 .item {
-  width: 150px;
+  width: 130px;
   height: 66px;
   border: 1px solid #eee;
   box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 20px;
-  background: #f7f6f7;
+  background: #7d8ac4;
   padding: 0.8rem 1rem;
-  color: #828282;
+  color: #0a0a0a;
   text-align: center;
   cursor: grab;
 }
@@ -63,8 +64,13 @@ body {
   background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
 }
 
+.delete {
+  background: linear-gradient(90deg, #08f708 0%, #6bee67 100%);
+}
+
 .hold {
-  border: 5px solid khaki;
+  border:5px solid khaki;
+  color: #320cdb;
 }
 
 .hide {
@@ -72,5 +78,6 @@ body {
 }
 
 .hovered {
-  border-top: 2px solid blueviolet;
+  border-top: 3px solid rgb(25, 132, 219);
+  border-bottom: 3px solid rgb(199, 238, 25);
 }
