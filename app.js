@@ -14,18 +14,25 @@ for (const placeholder of placeholders) {
 function dragstart(event) {
     event.target.classList.add('hold')
     setTimeout(() => event.target.classList.add('hide'), 0)
-    
 }
 
 function dragend(event) {
     event.target.className = 'item'
-    
 }
 
-function dragover(event) {}
+function dragover(event) {
+    event.preventDefault()
+}
 
-function dragenter(event) {}
+function dragenter(event) {
+    event.target.classList.add('hovered')
+}
 
-function dragleave(event) {}
+function dragleave(event) {
+    event.target.classList.remove('hovered')
+}
 
-function dragdrop(event) {}
+function dragdrop(event) {
+    event.target.classList.remove('hovered')
+    event.target.append(item)
+}
